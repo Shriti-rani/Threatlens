@@ -14,7 +14,9 @@ from sklearn.metrics import accuracy_score
 from datetime import datetime
 import plotly.express as px
 # ---------------- DATABASE ----------------
-conn=pymongo.MongoClient("mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.8.3")
+conn = pymongo.MongoClient(
+    "mongodb+srv://shristikansyakar18_db_user:VC5zQvK4Qo4PVkS5@cluster0.mgxfgsb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+)
 mydb=conn["threatlens"]
 my=mydb["user"]
 scan_db = mydb["scan_history"]
