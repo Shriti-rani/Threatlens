@@ -20,7 +20,7 @@ my=mydb["user"]
 scan_db = mydb["scan_history"]
 
 # ---------------- LOAD MODEL ----------------
-df = pd.read_csv("new_data_urls.csv")
+df = pd.read_csv("new_data_urls.zip")
 
 x_train,x_test,y_train,y_test = train_test_split(
     df["url"],
